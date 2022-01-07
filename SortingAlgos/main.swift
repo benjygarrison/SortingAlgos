@@ -45,4 +45,23 @@ print("A sorted array: \(bubbleSort.sort([5, 4, 6, 2, 1]))")
 
 /*
  MARK: Merge Sort
+ Divide and conquer, split then merge
+    - Step 1 ("Divide/Split"): keep dividing array until it reaches its smallest form
+    -Step 2 ("Conquer/Merge"): recombine and sort as you go
+              
+               |12|2|34|4|8|19|21|
+                  /         \
+             |12|2|34|4|  |8|19|21|
+              /     \        \     \
+           |2|12| |34|4|   |8|19| |21|
+            /  |    |   \    |  \    \
+         |2| |12| |34| |4| |8| |19| |21|
+           \   |    \   /    |  /    /
+           |2|12|  |4|34|   |8|19| |21|
+              \       /        /     /
+            |2|4|12|34|     |8|19|21|
+                   \          /
+               |2|4|8|12|19|21|34|
+ 
+ O(n log n) : because you keep halving (log) and merging (log) recursively
  */
