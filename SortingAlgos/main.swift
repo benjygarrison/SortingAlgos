@@ -9,7 +9,10 @@ import Foundation
 
 /*
  Sorting methods.
- MARK: Top 3 to know: Bubble, Merge, Quick
+ MARK: Top 3 to know: Bubble (slowest), Merge (middle), Quick (fastest)
+ 
+ MARK: What to know: runtimes, which is fastest/slowest
+ 
  */
 
 
@@ -64,4 +67,15 @@ print("A sorted array: \(bubbleSort.sort([5, 4, 6, 2, 1]))")
                |2|4|8|12|19|21|34|
  
  O(n log n) : because you keep halving (log) and merging (log) recursively
+ */
+
+
+
+/*
+ MARK: Quick Sort
+ Create a "pivot" point (likely near the center), and pivot variables around it.
+ Set pointers on left and right. Iterate through and compare them to pivot value (and each other), and swap from left-to-right or right-to-left where appropriate.
+ Eventually, you'll have 2 arrays. Repeat until you have progressively smaller arrays, and then recombine--similar to merge sort.
+ MARK: O(n log n) -> FASTEST of 3 sort algos.
+ 
  */
