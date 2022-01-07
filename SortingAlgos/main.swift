@@ -9,17 +9,16 @@ import Foundation
 
 /*
  Sorting methods.
- 
  MARK: Top 3 to know: Bubble, Merge, Quick
- 
- Bubble sort = simplest. Compare items (in array, for example), and "bubble the largest value up by comparing it against every item after."
-ex: 5, 4, 3, 2, 1 -> Compare the 5 until it reaches end, keep passing with smaller numbers.
-//MARK: Two sweep, internal for loop
- 
  */
 
 
-//Bubble sort code:
+ /*
+ MARK: Bubble Sort
+ Bubble sort = simplest. Compare items (in array, for example), and "bubble the largest value up by comparing it against every item after."
+ex: 5, 4, 3, 2, 1 -> Compare the 5 until it reaches end, keep passing with smaller numbers.
+//MARK: Two sweep, internal for loop -> O(n^2)
+ */
 
 class BubbleSort {
     func sort(_ array: [Int]) -> [Int] {
@@ -43,3 +42,7 @@ class BubbleSort {
 let bubbleSort = BubbleSort()
 print("A sorted array: \(bubbleSort.sort([5, 4, 6, 2, 1]))")
 
+
+/*
+ MARK: Merge Sort
+ */
